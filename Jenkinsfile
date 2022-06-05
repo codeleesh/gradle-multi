@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        gradle 'gradle-7.4.1'
+    }
+
     environment {
         BUILD_TARGET_HOME = '${BUILD_HOME}'
         PROJECT = 'gradle-multi'
